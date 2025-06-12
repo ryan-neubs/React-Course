@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    background-color: #F0EFEB;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FAFAF8;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+  gap: 11px;
+}
+
+header > img {
+  width: 43px;
+  height: 52px;
+}
+
+header > h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* main {
+
+} */
+
+.ingredient-form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  height: 38px;
+  margin-top: 67px;
+}
+
+.ingredient-form > input {
+  border-radius: 6px;
+  border: 1px solid #D1D5DB;
+  padding: 9px 13px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0,05);
+  flex-grow: 1;
+  max-width: 400px;
+  min-width: 150px;
+}
+
+.ingredient-form > button {
+  font-family: Inter, sans-serif;
+  font-weight: 500px;
+  font-size: 14px;
+  color: FAFAF8;
+  background-color: #141413;
+  width: 183px;
+  height: 36;
+  border-radius: 6px;
+  border: none;
+}
+
+.ingredient-form  > button::before {
+  content: "+";
+  margin-right: 5px;
+}

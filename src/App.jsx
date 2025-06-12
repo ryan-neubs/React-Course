@@ -1,7 +1,11 @@
+import Header from "./Components/Header"
+import Main from "./Components/Main"
+
 export default function App() {
     return (
         <>
-            <h1>Hi! I am an app template!</h1>
+            <Header />
+            <Main />
         </>
     )
 }
