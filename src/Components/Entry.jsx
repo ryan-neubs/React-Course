@@ -2,7 +2,7 @@ export default function Entry(props) {
     return (
         <>
             <article className="journal-entry">
-                <img src={props.image} alt="Mount Fuji" />
+                <img src={props.image} alt={props.location} />
                 <div className="info-container">
                     <div className="location">
                         <img className="marker" src="./src/assets/marker.png" alt="Location Marker" />
