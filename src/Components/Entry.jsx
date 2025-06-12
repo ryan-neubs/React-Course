@@ -1,17 +1,24 @@
 export default function Entry(props) {
+    const img = props.entry.img;
+    const country = props.entry.country.toUpperCase();
+    const mapsLink = props.entry.googleMapsLink;
+    const title = props.entry.title;
+    const dates = props.entry.dates;
+    const text = props.entry.text;
+    
     return (
         <>
             <article className="journal-entry">
-                <img src={props.image} alt={props.location} />
+                <img src={img.src} alt={img.alt} />
                 <div className="info-container">
                     <div className="location">
                         <img className="marker" src="./src/assets/marker.png" alt="Location Marker" />
-                        <span className="country">{props.country.toUpperCase()}</span>
-                        <a href={props.address}>View on Google Maps</a>
+                        <span className="country">{country.toUpperCase()}</span>
+                        <a href={mapsLink}>View on Google Maps</a>
                     </div>
-                    <h2>{props.location}</h2>
-                    <time className="date">{props.date}</time>
-                    <p>{props.description}</p>
+                    <h2>{title}</h2>
+                    <time className="date">{dates}</time>
+                    <p>{text}</p>
                 </div>
             </article>
         </>
