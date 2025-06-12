@@ -16,7 +16,9 @@ export default function App() {
     return (
         <>
             <Header />
-            {entries}
+            <div className="grid-container">
+                {entries}
+            </div>
         </>
     )
 }
